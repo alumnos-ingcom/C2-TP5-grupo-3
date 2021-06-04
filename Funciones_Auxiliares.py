@@ -12,7 +12,7 @@ def ingrese_numero(mensaje):
         entero = int(ingresado)
         return entero
     except ValueError as err:
-        raise IngresoIncorrecto()
+        raise IngresoIncorrecto("el input no era un numero")
 
 def ingrese_entero_reintento(mensaje, intentos=5):
     i = intentos
@@ -34,3 +34,14 @@ def ingreso_entero_restringido(mensaje, valor_minimo=0, valor_maximo=10):
             raise FueraDeLimite("el input esta fuera de los limites establecidos")
     except IngresoIncorrecto:
         raise IngresoIncorrecto("el input no era un numero")
+
+def modulo(numero):
+    '''
+    se aplica valor absoluto, tambien llamado modulo, a numero
+    '''
+    if(numero < 0):
+        numero = -numero
+    return numero
+        
+        
+        
