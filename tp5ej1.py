@@ -1,4 +1,4 @@
-from Funciones_Auxiliares import ingrese_numero
+from funciones_auxiliares import ingrese_numero
 
 def es_par(numero):
     '''
