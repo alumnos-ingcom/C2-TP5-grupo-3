@@ -1,5 +1,5 @@
-from Funciones_Auxiliares import ingrese_numero
-from Funciones_Auxiliares import IngresoIncorrecto
+from funciones_auxiliares import ingrese_numero
+from funciones_auxiliares import IngresoIncorrecto
 
 def fibonacci(n):
 
