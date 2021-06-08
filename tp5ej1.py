@@ -14,10 +14,7 @@ def es_par(numero):
     while (auxiliar > 1):
         auxiliar -= 2
         
-    if(auxiliar == 0):
-        return True
-    else:
-        return False
+    return (auxiliar == 0)
     
 def prueba():
     numero = ingrese_numero("ingrese un numero entero")
