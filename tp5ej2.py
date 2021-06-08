@@ -3,17 +3,19 @@ from funciones_auxiliares import IngresoIncorrecto
 
 def fibonacci(n):
 
-    lista_fibonacci = []
+    #Lo que esta comentado se puede aplicar si quiero devolver una LISTA con la sequencia de fibonacci de los primeros n-esimo numeros
+    
+    #lista_fibonacci = []
     valor_actual = 1
     valor_anterior = 0
     
     for i in range(0, n):
-        lista_fibonacci.append(valor_actual)
-        aux = valor_actual
+        #lista_fibonacci.append(valor_actual)
+        auxiliar = valor_actual
         valor_actual += valor_anterior
-        valor_anterior = aux
+        valor_anterior = auxiliar
         
-    return lista_fibonacci
+    return valor_actual #return lista_fibonacci
     
 def prueba():
     numero = ingrese_numero("ingrese un numero entero positivo")
