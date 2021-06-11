@@ -17,3 +17,6 @@ def prueba():
         print(f"el numero {numero} ES PERFECTO")
     else:
         print(f"el numero {numero} NO ES PERFECTO")
+
+if __name__ == "__main__":
+    prueba()
