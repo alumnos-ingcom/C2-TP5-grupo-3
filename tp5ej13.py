@@ -23,3 +23,5 @@ def prueba():
     except ElementoNoEncontrado:
         raise ElementoNoEncontrado(f"No se ha encontrado [{b}] en [{a}]")
  
+if __name__ == "__main__":
+    prueba()
