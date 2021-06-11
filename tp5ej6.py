@@ -63,3 +63,5 @@ def prueba():
     else:
         print(f"{texto}\tNO OK")
         
+if __name__ == "__main__":
+    prueba()
