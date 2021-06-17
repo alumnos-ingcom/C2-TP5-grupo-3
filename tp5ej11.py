@@ -4,15 +4,8 @@
 ################
 
 from funciones_auxiliares import ingrese_numero
+from funciones_auxiliares import crear_lista
 
-def crear_lista(cantidad):
-    '''Crea la lista con el tamaño que recibe por parametro'''
-    
-    lista = []
-    for i in range (0,cantidad):
-        numero = ingrese_numero("Ingrese un numero")
-        lista.append(numero)
-    return lista
 
 def promedio_movil(lista, n):
     lista_promedios = []
