@@ -12,7 +12,7 @@ def promedio_movil(lista, n):
 
     for i in range(len(lista)-(n)):
         suma = 0
-        for j in range (0,3):
+        for j in range (0,n):
             suma = lista[i+j] + suma
             print (suma)
         promedio = suma / n
