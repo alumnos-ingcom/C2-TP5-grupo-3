@@ -8,9 +8,13 @@ from funciones_auxiliares import ingrese_numero
 from funciones_auxiliares import modulo
 
 def distancia(num1, num2):
-    num1 = modulo(num1)
-    num2 = modulo(num2)
-    resultado = num1 + num2
+    if ((num1 < 0 and num2 < 0) or(num1 > 0 and num2 > 0)):
+        
+        resultado = modulo(num1 - num2)
+    else: 
+        num1 = modulo(num1)
+        num2 = modulo(num2)
+        resultado = (num1 + num2)
     return resultado
     
 def prueba():
