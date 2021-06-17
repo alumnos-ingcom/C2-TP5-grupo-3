@@ -42,7 +42,7 @@ def modulo(numero):
     se aplica valor absoluto, tambien llamado modulo, a numero
     '''
     if(numero < 0):
-        numero = -numero
+        numero = (numero)*-1
     return numero
         
 def es_palindromo(texto):
@@ -73,3 +73,12 @@ def lista_random(cantidad=10, numero_minimo=0, numero_maximo=100):
     for i in range(cantidad):
         milista.append(randint(numero_minimo, numero_maximo))
     return milista      
+
+def crear_lista(cantidad):
+    '''Crea la lista con el tamaño que recibe por parametro'''
+    
+    lista = []
+    for i in range (0,cantidad):
+        numero = ingrese_numero("Ingrese un numero")
+        lista.append(numero)
+    return lista
