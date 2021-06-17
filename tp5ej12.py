@@ -6,6 +6,7 @@
 
 
 from funciones_auxiliares import ingrese_numero
+from funciones_auxiliares import crear_lista
 
 def comparar_listas(lista1, lista2):
     '''Recibe dos listas y retorna True si
@@ -19,15 +20,6 @@ def comparar_listas(lista1, lista2):
             if (lista1[i] == lista2[n]):
                 contador = contador +1
     return (contador == len(lista1))
-
-def crear_lista(cantidad):
-    '''Crea la lista con el tamaño que recibe por parametro'''
-    
-    lista = []
-    for i in range (0,cantidad):
-        numero = ingrese_numero("Ingrese un numero")
-        lista.append(numero)
-    return lista
         
 def prueba():
     print("      LISTA 1       ")
